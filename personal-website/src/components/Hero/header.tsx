@@ -5,7 +5,7 @@ interface Props {}
 const Header: FunctionComponent<Props> = () => {
     return (
         <>
-            <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl">
+            <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl mb-[50px] mt-[40px]">
                 <button className="flex">
                     <svg
                         stroke="currentColor"

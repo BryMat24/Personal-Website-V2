@@ -13,7 +13,7 @@ const Hero: FunctionComponent<Props> = () => {
                         className="lg:text-8xl md:text-7xl blockf font-semibold"
                         style={{ lineHeight: 1.15 }}
                     >
-                        Bryan . Rustardy
+                        Bryan M Rustardy
                     </h1>
                 </div>
                 <div>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const monserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Bryan's Space",
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={monserrat.className}>{children}</body>
         </html>
     );
 }
