@@ -5,8 +5,8 @@ import Subheading from "./subHeading";
 
 export default function About() {
     return (
-        <section className="flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-8/12 md:m-auto">
-            <SectionHeading title="About" />
+        <section className="flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-9/12 md:m-auto">
+            <SectionHeading title="About Me" type="right" />
             <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-7/12">
                 <div>
                     <Subheading title="Education & Summary" />
