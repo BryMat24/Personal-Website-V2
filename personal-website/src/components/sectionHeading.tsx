@@ -7,7 +7,7 @@ interface Props {
 const SectionHeading: FunctionComponent<Props> = ({ title }) => {
     return (
         <div
-            className="flex my-5 mb-3 lg:mt-0 overflow-hidden bg-dark-bg duration-700 relative"
+            className="flex my-5 mb-3 lg:mt-0 overflow-hidden bg-dark-bg duration-700 relative py-2"
             style={{ opacity: 1 }}
         >
             <h3
@@ -17,8 +17,8 @@ const SectionHeading: FunctionComponent<Props> = ({ title }) => {
                 {title}
             </h3>
             <div
-                className="relative top-0 self-end right-8 lg:right-13 w-16 lg:h-10 bg-white"
-                style={{ opacity: 1, transform: "none" }}
+                className="relative self-end right-[50px] lg:right-13 w-16 h-8 lg:h-12 bg-white translate-y-2"
+                style={{ opacity: 1 }}
             ></div>
         </div>
     );
