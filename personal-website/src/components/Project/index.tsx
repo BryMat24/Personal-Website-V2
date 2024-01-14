@@ -1,55 +1,27 @@
 import React, { FunctionComponent } from "react";
 import SectionHeading from "../sectionHeading";
+import ProjectDisplay from "./project";
 
-interface ProjectProps {}
-
-const Project: FunctionComponent<ProjectProps> = () => {
+const Project: FunctionComponent = () => {
     return (
-        <section className="bg-black px-8 py-4 pb-24 mt-7 flex flex-col">
-            <div className="md:w-auto md:m-0 lg:w-3/4 lg:m-auto">
+        <section className="flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-9/12 md:m-auto">
+            <div className="flex my-5 mb-3 lg:mt-0 overflow-hidden bg-dark-bg duration-700 relative py-2">
                 <SectionHeading title="Projects" type="left" />
             </div>
-            <div
-                className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-32"
-                style={{ transform: "translateY(-108.055px) translateZ(0px)" }}
-            >
-                <div className="flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0">
-                    <button
-                        aria-label="Visit project's website"
-                        className="mb-2 md:my-2"
-                    >
-                        <div className="flex flex-col my-2 md:mt-4">
-                            <div className="lazyload-wrapper">
-                                <img
-                                    className="self-start m-auto project-fallback"
-                                    alt="Screenshot of current project"
-                                    src="ShareMySight.png"
-                                />
-                            </div>
-                        </div>
-                    </button>
-                    <div className="flex justify-center w-full max-w-sm self-center lg:max-w-none">
-                        <a
-                            aria-label="Visit repository on GitHub"
-                            href="https://github.com/randrerd/hacemos-tu-sociedad"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0"
-                        >
-                            Code
-                        </a>
-                        <a
-                            aria-label="Visit project's website"
-                            href="https://hacemostusociedad.com.ar"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0"
-                        >
-                            Live
-                        </a>
-                    </div>
-                    <div className="relative self-center w-48 h-2 mt-2 bg-white lg:ml-2 lg:w-40"></div>
-                </div>
+            <div>
+                <ProjectDisplay
+                    title="ShareMySight"
+                    description="An application crafted to support individuals with visual impairments by connecting them with volunteers and integrating OpenAI ChatBot for image-to-text communication."
+                    imageUrl="ShareMySight.png"
+                />
+                <ProjectDisplay
+                    title="ShareMySight"
+                    description="An application designed to bridge the gap between visually
+                    impaired individuals and volunteers who are eager to assist.
+                    The app leverages voice calls, chat assistance, and a
+                    generative AI to assist them."
+                    imageUrl="ShareMySight.png"
+                />
             </div>
         </section>
     );
