@@ -13,7 +13,7 @@ const ProjectDisplay: FunctionComponent<Props> = ({
 }) => {
     return (
         <div
-            className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-32"
+            className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-12 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-24"
             style={{ transform: "translateY(-108.055px) translateZ(0px)" }}
         >
             <div className="flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0">
@@ -24,7 +24,7 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                     <div className="flex flex-col my-2 md:mt-4">
                         <div className="lazyload-wrapper">
                             <img
-                                className="self-start m-auto project-fallback object-cover"
+                                className="self-start m-auto project-fallback max-h-[300px] w-full object-cover rounded-md"
                                 alt="Screenshot of current project"
                                 src={imageUrl}
                             />
@@ -40,6 +40,10 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                 <p className="text-gray-50 text-lg font-light mt-3">
                     {description}
                 </p>
+                <div className="flex gap-5 mt-5">
+                    <p className="font-bold border-r-2 pr-5">Code</p>
+                    <p className="font-bold">Live</p>
+                </div>
             </div>
         </div>
     );

@@ -15,12 +15,19 @@ const Project: FunctionComponent = () => {
                     imageUrl="ShareMySight.png"
                 />
                 <ProjectDisplay
-                    title="ShareMySight"
-                    description="An application designed to bridge the gap between visually
-                    impaired individuals and volunteers who are eager to assist.
-                    The app leverages voice calls, chat assistance, and a
-                    generative AI to assist them."
-                    imageUrl="ShareMySight.png"
+                    title="Shoppable"
+                    description="With user-friendly navigation, secure transactions, Discover, choose, and redefine your style effortlessly on our premium ecommerce platform for clothing brands."
+                    imageUrl="Ecommerce.png"
+                />
+                <ProjectDisplay
+                    title="Online Food Delivery Predictor"
+                    description="Apply machine learning models: linear regression, decision tree, random forest, lasso regression and xgboost to predict time taken for food delivery."
+                    imageUrl="FoodDelivery.jpg"
+                />
+                <ProjectDisplay
+                    title="SortViz"
+                    description="Developed an interactive sorting visualizer application, incorporating 4 sorting algorithms: Bubble Sort, Quick Sort, Heap Sort and Merge Sort"
+                    imageUrl="SortViz.png"
                 />
             </div>
         </section>
