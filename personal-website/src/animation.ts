@@ -12,6 +12,19 @@ export const containerVariants = {
     },
 };
 
+export const projectVariant = {
+    hidden: {
+        opacity: 0,
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            duration: 0.2,
+            ease: "easeOut",
+        },
+    },
+};
+
 export const paragraphContainer = {
     hidden: {},
     show: {

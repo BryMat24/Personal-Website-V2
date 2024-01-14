@@ -11,9 +11,11 @@ const Footer: FunctionComponent = () => {
                     See my full profile
                 </p>
                 <button className="bg-light-bg border border-light-secondary border-solid my-8 mx-6 p-3 mt-5 duration-300">
-                    <span className="text-light-secondary text-2xl font-light">
-                        My Resume
-                    </span>
+                    <a href="bryanCV.pdf" download>
+                        <span className="text-light-secondary text-2xl font-light">
+                            My Resume
+                        </span>
+                    </a>
                 </button>
             </section>
             <Social />

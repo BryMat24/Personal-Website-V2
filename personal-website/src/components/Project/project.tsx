@@ -1,21 +1,25 @@
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
-import { containerVariants, textVariants } from "@/animation";
+import { projectVariant } from "@/animation";
 
 interface Props {
     title: string;
     description: string;
     imageUrl: string;
+    codeLink: string;
+    liveLink: string | undefined;
 }
 
 const ProjectDisplay: FunctionComponent<Props> = ({
     title,
     description,
     imageUrl,
+    codeLink,
+    liveLink,
 }) => {
     return (
         <motion.div
-            variants={containerVariants}
+            variants={projectVariant}
             className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-12 lg:w-8/12 lg:m-auto lg:flex-row lg:mb-24"
             style={{ transform: "translateY(-108.055px) translateZ(0px)" }}
         >
@@ -35,8 +39,14 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                     </div>
                 </button>
                 <div className="flex gap-5 justify-center m-2">
-                    <p className="font-bold border-r-2 pr-5">Code</p>
-                    <p className="font-bold">Live</p>
+                    <a href={codeLink}>
+                        <p className="font-bold">Code</p>
+                    </a>
+                    {liveLink && (
+                        <a href={liveLink}>
+                            <p className="font-bold border-l-2 pl-5">Live</p>
+                        </a>
+                    )}
                 </div>
                 <div className="relative self-center w-48 h-1 mt-2 bg-white lg:ml-2 lg:w-40"></div>
             </div>

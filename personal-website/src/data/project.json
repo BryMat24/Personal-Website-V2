@@ -2,21 +2,28 @@
     {
         "title": "ShareMySight",
         "description": "An application crafted to support individuals with visual impairments by integrating OpenAI ChatBot for image-to-text communication.",
-        "imageUrl": "ShareMySight.png"
+        "imageUrl": "ShareMySight.png",
+        "codeLink": "https://github.com/BryMat24/ShareMySight-Backend",
+        "liveLink": "https://sharemysight-app.vercel.app/"
     },
     {
         "title": "Shoppable",
         "description": "With user-friendly navigation, secure transactions, discover your style effortlessly on our ecommerce platform for clothing brands.",
-        "imageUrl": "Ecommerce.png"
+        "imageUrl": "Ecommerce.png",
+        "codeLink": "https://github.com/BryMat24/Shoppable-client",
+        "liveLink": "https://shoppable-ec.web.app/"
     },
     {
         "title": "Online Food Delivery Predictor",
         "description": "Apply ML models: decision tree, random forest, lasso regression and xgboost to predict time taken for food delivery.",
-        "imageUrl": "FoodDelivery.jpg"
+        "imageUrl": "FoodDelivery.jpg",
+        "codeLink": "https://github.com/BryMat24/Online-Food-Delivery-Prediction"
     },
     {
         "title": "SortViz",
         "description": "An interactive sorting visualizer, incorporating four sorting algorithms: Bubble Sort, Quick Sort, Heap Sort and Merge Sort",
-        "imageUrl": "SortViz.png"
+        "imageUrl": "SortViz.png",
+        "codeLink": "https://github.com/BryMat24/SortViz",
+        "liveLink": "https://sortviz.web.app/"
     }
 ]

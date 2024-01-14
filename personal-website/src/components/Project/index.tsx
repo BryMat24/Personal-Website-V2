@@ -12,6 +12,8 @@ interface projectData {
     title: string;
     description: string;
     imageUrl: string;
+    codeLink: string;
+    liveLink?: string;
 }
 
 const Project: FunctionComponent = () => {
@@ -36,6 +38,8 @@ const Project: FunctionComponent = () => {
                         title={el.title}
                         description={el.description}
                         imageUrl={el.imageUrl}
+                        codeLink={el.codeLink}
+                        liveLink={el?.liveLink}
                         key={index}
                     />
                 ))}
