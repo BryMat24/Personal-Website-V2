@@ -6,7 +6,7 @@ import { textVariants, containerVariants } from "@/animation";
 
 const Hero: FunctionComponent = () => {
     return (
-        <>
+        <div className="relative">
             <motion.div
                 variants={containerVariants}
                 animate="show"
@@ -40,7 +40,7 @@ const Hero: FunctionComponent = () => {
                 </div>
                 <div className="w-[300px] h-2 my-1 bg-white mt-1"></div>
             </motion.div>
-        </>
+        </div>
     );
 };
 
