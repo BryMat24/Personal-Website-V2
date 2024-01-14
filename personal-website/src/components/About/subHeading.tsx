@@ -11,7 +11,7 @@ const Subheading: FunctionComponent<Props> = ({ title }) => {
 
     return (
         <h4
-            className="text-dark-primary mt-8 duration-700 lg:text-2xl"
+            className="text-dark-primary mt-8 duration-700 lg:text-2xl about-heading"
             style={subheadingStyle}
         >
             {title}

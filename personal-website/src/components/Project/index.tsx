@@ -11,22 +11,22 @@ const Project: FunctionComponent = () => {
             <div>
                 <ProjectDisplay
                     title="ShareMySight"
-                    description="An application crafted to support individuals with visual impairments by connecting them with volunteers and integrating OpenAI ChatBot for image-to-text communication."
+                    description="An application crafted to support individuals with visual impairments by integrating OpenAI ChatBot for image-to-text communication."
                     imageUrl="ShareMySight.png"
                 />
                 <ProjectDisplay
                     title="Shoppable"
-                    description="With user-friendly navigation, secure transactions, Discover, choose, and redefine your style effortlessly on our premium ecommerce platform for clothing brands."
+                    description="With user-friendly navigation, secure transactions, discover your style effortlessly on our ecommerce platform for clothing brands."
                     imageUrl="Ecommerce.png"
                 />
                 <ProjectDisplay
                     title="Online Food Delivery Predictor"
-                    description="Apply machine learning models: linear regression, decision tree, random forest, lasso regression and xgboost to predict time taken for food delivery."
+                    description="Apply ML models: decision tree, random forest, lasso regression and xgboost to predict time taken for food delivery."
                     imageUrl="FoodDelivery.jpg"
                 />
                 <ProjectDisplay
                     title="SortViz"
-                    description="Developed an interactive sorting visualizer application, incorporating 4 sorting algorithms: Bubble Sort, Quick Sort, Heap Sort and Merge Sort"
+                    description="An interactive sorting visualizer, incorporating four sorting algorithms: Bubble Sort, Quick Sort, Heap Sort and Merge Sort"
                     imageUrl="SortViz.png"
                 />
             </div>

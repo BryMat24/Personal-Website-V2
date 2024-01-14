@@ -11,7 +11,7 @@ const Paragraph: FunctionComponent<ParagraphProps> = ({ children }) => {
 
     return (
         <p
-            className="text-dark-primary my-2 duration-700 lg:text-lg relative overflow-hidden"
+            className="my-2 duration-700 lg:text-lg relative overflow-hidden"
             style={paragraphStyle}
         >
             <span>

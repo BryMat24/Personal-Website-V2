@@ -25,3 +25,30 @@ body {
         )
         rgb(var(--background-start-rgb));
 }
+
+.about-section {
+    position: relative;
+}
+
+.about-section::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    position: absolute;
+    border: 1px solid white;
+    height: 100%;
+    left: -33px;
+    top: -11px;
+}
+
+.about-heading::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    left: -40px;
+    top: 8px;
+}

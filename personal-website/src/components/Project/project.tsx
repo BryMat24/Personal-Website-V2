@@ -13,10 +13,10 @@ const ProjectDisplay: FunctionComponent<Props> = ({
 }) => {
     return (
         <div
-            className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-12 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-24"
+            className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-12 lg:w-8/12 lg:m-auto lg:flex-row lg:mb-24"
             style={{ transform: "translateY(-108.055px) translateZ(0px)" }}
         >
-            <div className="flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0">
+            <div className="flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-8/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0">
                 <button
                     aria-label="Visit project's website"
                     className="mb-2 md:my-2"
