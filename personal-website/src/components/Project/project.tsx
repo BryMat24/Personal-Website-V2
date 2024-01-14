@@ -31,6 +31,10 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                         </div>
                     </div>
                 </button>
+                <div className="flex gap-5 justify-center m-2">
+                    <p className="font-bold border-r-2 pr-5">Code</p>
+                    <p className="font-bold">Live</p>
+                </div>
                 <div className="relative self-center w-48 h-1 mt-2 bg-white lg:ml-2 lg:w-40"></div>
             </div>
             <div className="flex flex-col items-start flex-shrink-0 md:w-4/6 md:m-auto md:mt-8 lg:mt-0 lg:w-5/12">
@@ -40,10 +44,6 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                 <p className="text-gray-50 text-lg font-light mt-3">
                     {description}
                 </p>
-                <div className="flex gap-5 mt-5">
-                    <p className="font-bold border-r-2 pr-5">Code</p>
-                    <p className="font-bold">Live</p>
-                </div>
             </div>
         </div>
     );
