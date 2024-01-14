@@ -1,0 +1,22 @@
+[
+    {
+        "title": "ShareMySight",
+        "description": "An application crafted to support individuals with visual impairments by integrating OpenAI ChatBot for image-to-text communication.",
+        "imageUrl": "ShareMySight.png"
+    },
+    {
+        "title": "Shoppable",
+        "description": "With user-friendly navigation, secure transactions, discover your style effortlessly on our ecommerce platform for clothing brands.",
+        "imageUrl": "Ecommerce.png"
+    },
+    {
+        "title": "Online Food Delivery Predictor",
+        "description": "Apply ML models: decision tree, random forest, lasso regression and xgboost to predict time taken for food delivery.",
+        "imageUrl": "FoodDelivery.jpg"
+    },
+    {
+        "title": "SortViz",
+        "description": "An interactive sorting visualizer, incorporating four sorting algorithms: Bubble Sort, Quick Sort, Heap Sort and Merge Sort",
+        "imageUrl": "SortViz.png"
+    }
+]
