@@ -61,7 +61,7 @@ body {
     fill: white;
     width: 50vmax;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.05;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
 }
