@@ -1,11 +1,35 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "../sectionHeading";
 import Paragraph from "./paragraph";
 import Subheading from "./subHeading";
+import { motion } from "framer-motion";
+import useScroll from "@/hooks/useScroll";
+import { containerVariants } from "../../animation";
+import { strongWordsVariants } from "@/animation";
+
+const Highlight = ({ children }: { children: any }) => (
+    <motion.strong
+        variants={strongWordsVariants}
+        className="text-black bg-white px-1 mx-1 inline-block font-medium"
+    >
+        {children}
+    </motion.strong>
+);
 
 export default function About() {
+    const [element, controls] = useScroll();
+
     return (
-        <section className="flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-9/12 md:m-auto">
+        <motion.section
+            exit="hidden"
+            initial="hidden"
+            animate={controls}
+            ref={element}
+            variants={containerVariants}
+            className="flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-9/12 md:m-auto"
+        >
             <SectionHeading title="About Me" type="right" />
             <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-8/12">
                 <div className="about-section">
@@ -20,15 +44,11 @@ export default function About() {
                     <Subheading title="Experience" />
                     <Paragraph>
                         I am currently undergoing my winter internship in{" "}
-                        <span className="text-black bg-white p-1 mx-1">
-                            Astra Financial Indonesia
-                        </span>{" "}
+                        <Highlight>Astra Financial Indonesia</Highlight>
                         as a software engineering intern where I am asked to
                         help revamp the Frontend of the company's career page
                         using React and manage the server of internal app using{" "}
-                        <span className="text-black bg-white p-1 mx-1">
-                            Spring Boot
-                        </span>
+                        <Highlight>Spring Boot</Highlight>
                     </Paragraph>
                 </div>
 
@@ -37,9 +57,7 @@ export default function About() {
                     <Paragraph>
                         Hi There! My name is Bryan Matthew Rustardy and I'm
                         currently a sophomore at{" "}
-                        <span className="bg-white text-black p-1">
-                            Nanyang Technological University
-                        </span>{" "}
+                        <Highlight>Nanyang Technological University</Highlight>
                         (NTU), majoring in Information Engineering.
                     </Paragraph>
                     <Paragraph>
@@ -74,6 +92,6 @@ export default function About() {
                     </ul>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
