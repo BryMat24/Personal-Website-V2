@@ -20,7 +20,13 @@ export default function About() {
                     </Paragraph>
                     <Paragraph>
                         I love to code and explore the world of web development,
-                        ranging from frontend, backend and recently Devops"
+                        ranging from frontend, backend and recently Devops
+                    </Paragraph>
+                    <Paragraph>
+                        With a keen eye for detail and a passion for
+                        problem-solving, I enjoy crafting robust and efficient
+                        solutions. Additionally, I find joy in learning new
+                        technologies, collaborating with teams!
                     </Paragraph>
                 </div>
 
@@ -55,7 +61,7 @@ export default function About() {
                             Spring Framework
                         </li>
                         <li>
-                            <b>Others</b>: Git, Docker, AWS
+                            <b>Others</b>: Git, Docker, AWS, python
                         </li>
                     </ul>
                 </div>
