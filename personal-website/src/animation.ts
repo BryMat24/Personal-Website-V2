@@ -64,16 +64,13 @@ export const subheadingVariants = {
     },
 };
 
-export const buttonHover = {
-    rest: {},
-    hover: {
-        background: "black",
-    },
-};
-
-export const buttonTextHover = {
-    rest: {},
-    hover: {
-        color: "white",
+export const triangleVariants = {
+    hidden: { opacity: 0, y: -50 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+        },
     },
 };
