@@ -1,4 +1,6 @@
 import { FunctionComponent } from "react";
+import { motion } from "framer-motion";
+import { containerVariants, textVariants } from "@/animation";
 
 interface Props {
     title: string;
@@ -12,7 +14,8 @@ const ProjectDisplay: FunctionComponent<Props> = ({
     imageUrl,
 }) => {
     return (
-        <div
+        <motion.div
+            variants={containerVariants}
             className="flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-12 lg:w-8/12 lg:m-auto lg:flex-row lg:mb-24"
             style={{ transform: "translateY(-108.055px) translateZ(0px)" }}
         >
@@ -45,7 +48,7 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                     {description}
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

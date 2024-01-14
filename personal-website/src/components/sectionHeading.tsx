@@ -35,10 +35,11 @@ const SectionHeading: FunctionComponent<Props> = ({ title, type }) => {
                     style={{ opacity: 1 }}
                 ></motion.div>
             ) : (
-                <div
+                <motion.div
+                    variants={subheadingVariants.rightToLeft}
                     className="absolute self-center mr-auto w-16 h-8 lg:h-12 bg-white"
                     style={{ opacity: 1, transform: "none" }}
-                ></div>
+                ></motion.div>
             )}
         </motion.div>
     );
