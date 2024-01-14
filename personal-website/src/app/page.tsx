@@ -2,16 +2,12 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Project from "@/components/Project";
 import Footer from "@/components/Footer";
+import Cursor from "@/components/cursor";
 
 export default function Home() {
-    const blobStyle = {
-        "--time": "20s",
-        "--amount": 5,
-        "--fill": "white",
-    };
-
     return (
         <div>
+            <Cursor />
             <Hero />
             <About />
             <Project />
