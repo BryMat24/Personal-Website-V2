@@ -23,7 +23,7 @@ const Footer: FunctionComponent = () => {
                     See my full profile
                 </p>
                 <button
-                    className={`bg-light-bg border border-solid my-5 mx-6 p-5 mt-5 duration-300 ${
+                    className={`bg-light-bg border border-solid my-5 mx-6 p-3 mt-5 md:p-5 duration-300 ${
                         theme === "light" ? "border-dark" : "border-light"
                     }`}
                 >
