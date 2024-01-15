@@ -21,7 +21,6 @@ const Project: FunctionComponent = () => {
     const threshold = [0.07, 0];
     const [element, controls] = useScroll(threshold);
     const projectData = require("../../data/project.json");
-    const { theme } = useContext(ThemeContext);
 
     return (
         <div className={`bg-dark`}>

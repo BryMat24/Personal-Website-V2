@@ -27,7 +27,10 @@ const Footer: FunctionComponent = () => {
                         theme === "light" ? "border-dark" : "border-light"
                     }`}
                 >
-                    <a href="BryanCV.pdf" download="Bryan Matthew Rustardy CV">
+                    <a
+                        href="Bryan Matthew CV.pdf"
+                        download="Bryan Matthew Rustardy CV"
+                    >
                         <span
                             className={`text-2xl font-light ${
                                 theme === "light" ? "text-dark" : "text-light"
