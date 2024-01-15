@@ -50,7 +50,7 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                 <p className="text-gray-50 text-lg font-light mt-3">
                     {description}
                 </p>
-                <div className="flex gap-5 justify-center m-2">
+                <div className="flex gap-5 justify-center mt-2">
                     <a href={codeLink}>
                         <p className="font-bold text-light">Code</p>
                     </a>
