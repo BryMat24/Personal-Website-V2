@@ -19,7 +19,7 @@ export const projectVariant = {
     show: {
         opacity: 1,
         transition: {
-            duration: 0.2,
+            duration: 0.5,
             ease: "easeOut",
         },
     },
