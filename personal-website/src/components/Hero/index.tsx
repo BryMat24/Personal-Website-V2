@@ -12,7 +12,7 @@ const Hero: FunctionComponent = () => {
         <div
             className={`relative ${
                 theme === "light" ? "bg-light" : "bg-dark"
-            } min-h-screen`}
+            } duration-700`}
             style={{ border: "1px solid rgba(255, 255, 255, 0)" }}
         >
             <motion.div
@@ -26,7 +26,7 @@ const Hero: FunctionComponent = () => {
                     <div className="overflow-hidden mb-6 lg:text-7xl w-min">
                         <motion.h1
                             variants={textVariants}
-                            className={`lg:text-8xl md:text-7xl block font-semibold ${
+                            className={`lg:text-8xl md:text-7xl block font-semibold sm:text-6xl text-[50px] ${
                                 theme === "light" ? "text-dark" : "text-light"
                             }`}
                             style={{ lineHeight: 1.15 }}
@@ -37,7 +37,7 @@ const Hero: FunctionComponent = () => {
                     <div>
                         <div className="overflow-hidden my-2 lg:text-5xl">
                             <motion.h2
-                                className={`text-dark-primary my-2 md:text-4xl lg:text-5xl block font-light ${
+                                className={`text-dark-primary my-2 lg:text-5xl md:text-4xl text-[18px] block font-light ${
                                     theme === "light"
                                         ? "text-dark"
                                         : "text-light"
@@ -53,7 +53,7 @@ const Hero: FunctionComponent = () => {
                     </div>
                 </div>
                 <div
-                    className={`w-[300px] h-2 my-1 mt-1 ${
+                    className={`w-[150px] lg:h-2 lg:w-[300px] md:w-[200px] h-1 my-1 mt-1 ${
                         theme === "light" ? "bg-dark" : "bg-light"
                     }`}
                 ></div>

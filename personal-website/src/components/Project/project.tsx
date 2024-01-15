@@ -41,6 +41,15 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                         </div>
                     </div>
                 </button>
+                <div className="relative self-center w-48 h-1 mt-2 bg-light lg:ml-2 lg:w-40"></div>
+            </div>
+            <div className="flex flex-col items-start flex-shrink-0 md:w-4/6 md:m-auto md:mt-8 lg:mt-0 lg:w-5/12">
+                <h4 className="text-gray-50 mb-3 font-semibold lg:self-start lg:mt-3 lg:mb-0 text-3xl">
+                    {title}
+                </h4>
+                <p className="text-gray-50 text-lg font-light mt-3">
+                    {description}
+                </p>
                 <div className="flex gap-5 justify-center m-2">
                     <a href={codeLink}>
                         <p className="font-bold text-light">Code</p>
@@ -53,15 +62,6 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                         </a>
                     )}
                 </div>
-                <div className="relative self-center w-48 h-1 mt-2 bg-light lg:ml-2 lg:w-40"></div>
-            </div>
-            <div className="flex flex-col items-start flex-shrink-0 md:w-4/6 md:m-auto md:mt-8 lg:mt-0 lg:w-5/12">
-                <h4 className="text-gray-50 mb-3 font-semibold lg:self-start lg:mt-3 lg:mb-0 text-3xl">
-                    {title}
-                </h4>
-                <p className="text-gray-50 text-lg font-light mt-3">
-                    {description}
-                </p>
             </div>
         </motion.div>
     );

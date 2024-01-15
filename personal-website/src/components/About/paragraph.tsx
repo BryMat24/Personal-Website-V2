@@ -19,7 +19,9 @@ const Paragraph: FunctionComponent<ParagraphProps> = ({ children }) => {
             style={paragraphStyle}
         >
             <span>
-                <span className="">{children}</span>
+                <span className="text-[14px] md:text-[16px] lg:text-[18px]">
+                    {children}
+                </span>
             </span>
         </p>
     );

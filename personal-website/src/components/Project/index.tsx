@@ -30,7 +30,7 @@ const Project: FunctionComponent = () => {
                 animate={controls}
                 ref={element}
                 variants={containerVariants}
-                className="flex flex-col duration-700 md:w-9/12 md:m-auto md:pt-[50px] px-8"
+                className="flex flex-col duration-700 md:w-9/12 md:m-auto md:pt-[50px] md:px-0 px-[50px]"
             >
                 <div className="flex my-5 mb-3 lg:mt-0 overflow-hidden bg-dark-bg duration-700 relative py-2">
                     <SectionHeading title="Projects" type="left" />

@@ -11,7 +11,7 @@ const Header: FunctionComponent = () => {
             <div
                 className={`flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl mb-[50px] mt-[40px] ${
                     theme === "light" ? "bg-white" : "bg-dark"
-                }`}
+                } duration-700`}
             >
                 <button className="flex" onClick={toggleTheme}>
                     {theme === "dark" ? (

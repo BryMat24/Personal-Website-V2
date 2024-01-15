@@ -37,7 +37,7 @@ export default function About() {
                 animate={controls}
                 ref={element}
                 variants={containerVariants}
-                className={`flex flex-col mx-8 my-4 mt-7 bg-dark-bg duration-700 md:w-9/12 md:m-auto md:pb-[180px]`}
+                className={`flex flex-col mx-8 bg-dark-bg duration-700 md:w-9/12 md:m-auto md:pb-[180px] px-[50px] py-12`}
             >
                 <SectionHeading title="About Me" type="right" />
                 <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-8/12">
@@ -105,7 +105,7 @@ export default function About() {
                         <Subheading title="Skills" />
                         <ul
                             style={{ transform: "translateY(-64.5044px)" }}
-                            className={`mt-2 text-lg ${
+                            className={`mt-2 text-[14px] md:text-[16px] lg:text-[18px] ${
                                 theme === "light" ? "text-dark" : "text-light"
                             }`}
                         >

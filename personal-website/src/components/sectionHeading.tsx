@@ -26,7 +26,7 @@ const SectionHeading: FunctionComponent<Props> = ({ title, type }) => {
         >
             <motion.h3
                 variants={textVariants}
-                className={`relative z-20 text-white mix-blend-difference md:text-4xl lg:text-5xl`}
+                className={`relative z-20 text-white mix-blend-difference text-3xl mb-2 sm:text-4xl md:text-5xl`}
                 style={{ opacity: 1, transform: "none" }}
             >
                 {title}
@@ -34,7 +34,7 @@ const SectionHeading: FunctionComponent<Props> = ({ title, type }) => {
             {type == "right" ? (
                 <motion.div
                     variants={subheadingVariants.leftToRight}
-                    className={`relative self-end right-[50px] lg:right-13 w-16 h-8 lg:h-12 translate-y-2 ${
+                    className={`relative self-end right-[50px] lg:right-13  w-16 h-8 lg:h-12 translate-y-2 ${
                         theme === "light" ? "bg-dark" : "bg-light"
                     }`}
                     style={{ opacity: 1 }}
