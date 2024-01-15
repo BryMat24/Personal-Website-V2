@@ -1,12 +1,20 @@
 "use client";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import Header from "./header";
 import { motion } from "framer-motion";
 import { textVariants, containerVariants } from "@/animation";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const Hero: FunctionComponent = () => {
+    const { theme } = useContext(ThemeContext);
+
     return (
-        <div className="relative">
+        <div
+            className={`relative ${
+                theme === "light" ? "bg-light" : "bg-dark"
+            } min-h-screen`}
+            style={{ border: "1px solid rgba(255, 255, 255, 0)" }}
+        >
             <motion.div
                 variants={containerVariants}
                 animate="show"
@@ -18,7 +26,9 @@ const Hero: FunctionComponent = () => {
                     <div className="overflow-hidden mb-6 lg:text-7xl w-min">
                         <motion.h1
                             variants={textVariants}
-                            className="lg:text-8xl md:text-7xl block font-semibold mix-blend-difference"
+                            className={`lg:text-8xl md:text-7xl block font-semibold ${
+                                theme === "light" ? "text-dark" : "text-light"
+                            }`}
                             style={{ lineHeight: 1.15 }}
                         >
                             Bryan M Rustardy
@@ -27,7 +37,11 @@ const Hero: FunctionComponent = () => {
                     <div>
                         <div className="overflow-hidden my-2 lg:text-5xl">
                             <motion.h2
-                                className="text-dark-primary my-2 md:text-4xl lg:text-5xl block font-light"
+                                className={`text-dark-primary my-2 md:text-4xl lg:text-5xl block font-light ${
+                                    theme === "light"
+                                        ? "text-dark"
+                                        : "text-light"
+                                }`}
                                 style={{ lineHeight: 1.2 }}
                                 variants={textVariants}
                             >
@@ -38,7 +52,11 @@ const Hero: FunctionComponent = () => {
                         <div className="w-32 my-1 h-1 bg-dark-secondary mt-5 lg:h-2 lg:w-1/2"></div>
                     </div>
                 </div>
-                <div className="w-[300px] h-2 my-1 bg-white mt-1"></div>
+                <div
+                    className={`w-[300px] h-2 my-1 mt-1 ${
+                        theme === "light" ? "bg-dark" : "bg-light"
+                    }`}
+                ></div>
             </motion.div>
         </div>
     );

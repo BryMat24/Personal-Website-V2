@@ -1,6 +1,7 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import { motion } from "framer-motion";
 import { projectVariant } from "@/animation";
+import { ThemeContext } from "@/context/ThemeContext";
 
 interface Props {
     title: string;
@@ -17,6 +18,8 @@ const ProjectDisplay: FunctionComponent<Props> = ({
     codeLink,
     liveLink,
 }) => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <motion.div
             variants={projectVariant}
@@ -40,15 +43,17 @@ const ProjectDisplay: FunctionComponent<Props> = ({
                 </button>
                 <div className="flex gap-5 justify-center m-2">
                     <a href={codeLink}>
-                        <p className="font-bold">Code</p>
+                        <p className="font-bold text-light">Code</p>
                     </a>
                     {liveLink && (
                         <a href={liveLink}>
-                            <p className="font-bold border-l-2 pl-5">Live</p>
+                            <p className="font-bold border-l-2 pl-5 text-light">
+                                Live
+                            </p>
                         </a>
                     )}
                 </div>
-                <div className="relative self-center w-48 h-1 mt-2 bg-white lg:ml-2 lg:w-40"></div>
+                <div className="relative self-center w-48 h-1 mt-2 bg-light lg:ml-2 lg:w-40"></div>
             </div>
             <div className="flex flex-col items-start flex-shrink-0 md:w-4/6 md:m-auto md:mt-8 lg:mt-0 lg:w-5/12">
                 <h4 className="text-gray-50 mb-3 font-semibold lg:self-start lg:mt-3 lg:mb-0 text-3xl">

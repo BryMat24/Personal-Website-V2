@@ -8,7 +8,11 @@ const Header: FunctionComponent = () => {
 
     return (
         <>
-            <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl mb-[50px] mt-[40px]">
+            <div
+                className={`flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl mb-[50px] mt-[40px] ${
+                    theme === "light" ? "bg-white" : "bg-dark"
+                }`}
+            >
                 <button className="flex" onClick={toggleTheme}>
                     {theme === "dark" ? (
                         <svg
@@ -17,7 +21,7 @@ const Header: FunctionComponent = () => {
                             strokeWidth="0"
                             viewBox="0 0 24 24"
                             aria-label="Change to light theme"
-                            className="my-1 lg:mx-1 text-dark-secondary"
+                            className="my-1 lg:mx-1 text-light"
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +46,7 @@ const Header: FunctionComponent = () => {
                             strokeWidth="0"
                             viewBox="0 0 24 24"
                             aria-label="Change to dark theme"
-                            className="my-1 lg:mx-1 text-light-secondary"
+                            className="my-1 lg:mx-1 text-dark"
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"

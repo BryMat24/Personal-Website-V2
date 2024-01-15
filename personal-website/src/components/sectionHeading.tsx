@@ -1,5 +1,5 @@
 "use client";
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import { motion } from "framer-motion";
 
 //Import animation variants
@@ -8,6 +8,7 @@ import {
     containerVariants,
     subheadingVariants,
 } from "@/animation";
+import { ThemeContext } from "@/context/ThemeContext";
 
 interface Props {
     title: string;
@@ -15,6 +16,8 @@ interface Props {
 }
 
 const SectionHeading: FunctionComponent<Props> = ({ title, type }) => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <motion.div
             variants={containerVariants}
@@ -23,21 +26,23 @@ const SectionHeading: FunctionComponent<Props> = ({ title, type }) => {
         >
             <motion.h3
                 variants={textVariants}
-                className="relative text-white z-20 mix-blend-difference lg:text-5xl"
-                style={{ opacity: 1, transform: "none", color: "white" }}
+                className={`relative z-20 text-white mix-blend-difference md:text-4xl lg:text-5xl`}
+                style={{ opacity: 1, transform: "none" }}
             >
                 {title}
             </motion.h3>
             {type == "right" ? (
                 <motion.div
                     variants={subheadingVariants.leftToRight}
-                    className="relative self-end right-[50px] lg:right-13 w-16 h-8 lg:h-12 bg-white translate-y-2"
+                    className={`relative self-end right-[50px] lg:right-13 w-16 h-8 lg:h-12 translate-y-2 ${
+                        theme === "light" ? "bg-dark" : "bg-light"
+                    }`}
                     style={{ opacity: 1 }}
                 ></motion.div>
             ) : (
                 <motion.div
                     variants={subheadingVariants.rightToLeft}
-                    className="absolute self-center mr-auto w-16 h-8 lg:h-12 bg-white"
+                    className={`absolute self-center mr-auto w-16 h-8 lg:h-12 bg-light`}
                     style={{ opacity: 1, transform: "none" }}
                 ></motion.div>
             )}
