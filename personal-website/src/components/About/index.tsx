@@ -30,7 +30,11 @@ export default function About() {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={theme === "light" ? "bg-light" : "bg-dark"}>
+        <div
+            className={`${
+                theme === "light" ? "bg-light" : "bg-dark"
+            } duration-700`}
+        >
             <motion.section
                 exit="hidden"
                 initial="hidden"
